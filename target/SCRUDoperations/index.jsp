@@ -9,7 +9,7 @@
     <title>CRUD operations</title>
 </head>
 <body>
-<c:import url="page_components/header.jsp"></c:import>
+<c:import url="pages/page_components/header.jsp"></c:import>
 <div class="container" >
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
