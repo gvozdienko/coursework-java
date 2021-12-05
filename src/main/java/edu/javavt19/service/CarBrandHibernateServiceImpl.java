@@ -8,12 +8,17 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
+
+/**
+ * Класс CarBrand для Hibernate
+ */
 @Service("carBrandHibernateService")
 @Transactional(readOnly=false, value = "hibernateTransactionManager")
 public class CarBrandHibernateServiceImpl implements CarBrandService {
     @Autowired
     @Qualifier("getCarBrandHibernateDAO")
     private CarBrandDAO carBrandDAO;
+
 
     public void saveOrUpdate(CarBrand item) {
         carBrandDAO.saveOrUpdate(item);

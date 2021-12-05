@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
+/**
+ * Класс CarModel для Jpa
+ */
+
 @Service("carModelJpaService")
 @Transactional(readOnly=false, value = "jpaTransactionManager")
 public class CarModelJpaServiceImpl implements CarModelService {

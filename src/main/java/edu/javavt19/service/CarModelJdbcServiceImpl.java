@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+/**
+ * Класс CarModel для Jdbc
+ */
+
 @Service("carModelJdbcService")
 public class CarModelJdbcServiceImpl implements CarModelService {
     @Autowired

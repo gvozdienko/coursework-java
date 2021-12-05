@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
+/**
+ * Класс CarModel для Hibernate
+ */
 @Service("carModelHibernateService")
 @Transactional(readOnly=false, value = "hibernateTransactionManager")
 public class CarModelHibernateServiceImpl implements CarModelService {
